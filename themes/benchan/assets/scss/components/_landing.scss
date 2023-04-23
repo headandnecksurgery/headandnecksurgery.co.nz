@@ -1,0 +1,13 @@
+#logo {
+    text-align: center;
+    padding: 20px;
+    z-index: 100;
+    // position: absolute;
+    top: 0;
+    width: calc(100% - 40px);
+    
+    img {
+        max-width: 145px;
+        margin: 0 auto;
+    }
+}

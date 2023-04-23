@@ -1,0 +1,19 @@
+.contact_form {
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=date], input[type=password], textarea {
+    width: 100%;
+}
+
+.two-register {
+    grid-template-columns: 1fr 40%;
+}
+
+.summary {
+    top: 127px;
+    
+    @include for-phone-only {
+        top: 10px;
+    }
+}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Open+Sans&family=Literata:opsz,wght@7..72,500&display=swap');
+$font-title: 'Hind', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+$font-logo: 'Literata', serif;
+
+$black: #000;
+$white: #FFFDFD;
+
+$grey-1: #f4f4f4;
+$grey-2: #B5B5B5;
+$grey-3: #4E4A5A;
+$grey-4: #343b43;
+$grey-5: #2D3142;
+
+$yellow: #ECA400;
+$orange: #FFA400;
+$orange-dark: #db8504;
+$red: #E03616;
+$red-dark: #832232;
+$pink: #FFA987;
+$purple: #805D93;
+$blue-darker: #00344E;
+$blue-dark: #001D4A;
+$blue: #4B88A2;
+$aqua: #44BBA4;
+$mint: #B9FFB7;
+$green: #3F826D;
+$green-dark: #2e5041;
+$beige: #C1B098;
+$brown: #4F270D;
+
+// Link states
+$link: $blue;
+$hover: $blue-dark;
+
+$link-light: $blue;
+$link-light-hover: $blue-dark;
+
+$button-primary: $link;
+$button-primary-hover: $hover;
+
+// header
+$page-header-bg: $white;
+$page-header-color: $blue;
+$page-header-link-color: $blue-dark;
+$page-header-link-hover-color: $blue;
+$page-header-btn-link-color: $yellow;
+$page-header-btn-link-hover-color: $orange;
+
+// page colours
+$body-bg: $white;
+$body-color: $blue-dark;
+$bg-page-section: $black;
+$bg-hero: $white;
+
+// blocks
+$block-bg: $white;
+$block-color: $grey-5;
+
+$block-alt-bg: $beige;
+$block-alt-color: $blue-dark;
+
+// footer
+$page-footer-bg: $beige;
+$page-footer-color: $blue-dark;
+
+$page-footer-link-color: $yellow;
+$page-footer-link-hover-color: $red;
+
+$page-footer-banner: $blue-dark;
+$page-footer-banner-color: white;

@@ -1,0 +1,43 @@
+.row {
+    margin-bottom: 20px;
+    
+    label {
+        display: block;
+    }
+
+    &.radio-buttons {
+        label {
+            display: inline;
+        }
+    }
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+label {
+    display: block;
+    font-size: 11px;
+}
+
+input, textarea {
+    @include border-radius($border-radius);
+    padding: 10px 15px;
+    border: 0 none;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+.info {
+    margin-left: 20px;
+    @include border-radius($border-radius);
+    padding: 10px;
+
+    @include for-phone-only {
+        margin-left: 0px;
+    }
+}

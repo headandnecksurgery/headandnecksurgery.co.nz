@@ -1,0 +1,60 @@
+<header id="page-header" class="{{ .Site.Params.headerLayout }} animated fadeIn delay-2s page-at-top" :class="menuChecked ? 'menu-checked' : ''"  x-data="{menuChecked: false}">
+   
+    <div>
+        <!-- Desktop -->
+        <div id="logo" class="animated fadeIn delay-1s">
+            {{/* <a href="#"><img src="/imgs/logo_navy.svg" alt="{{ .Site.Title }}" /></a> */}}
+            <a href="#" @click="menuChecked=false">
+                {{ .Site.Title }}
+                <div id="logo-tag-line">Head and Neck Surgeon</div>
+            </a>
+        </div>
+        <div id="main-menu" class="animated fadeIn delay-1s">
+            <nav class="for-tablet-portrait-up">
+                {{/* <ul>
+                    {{ with .Site.Menus.main}}
+                    {{ range sort . }}
+                    <li class="navigation-item">
+                        <a class="navigation-link {{ .Title }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                    {{ end }}
+                </ul> */}}
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#about">About</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="mailto:suzy@chchorl.co.nz?subject=Book an appointment">Book an appointment</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile -->
+            <nav role="navigation" class="phone-menu for-phone-only">
+                <div id="menuToggle">
+                    <input type="checkbox" id="menu-trigger" :checked="menuChecked" x-model="menuChecked" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        {{/* {{ with .Site.Menus.main}}
+                        {{ range sort . }}
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                        {{ end }} */}}
+                        <ul>
+                            <li><a href="#services" @click="menuChecked=false">Services</a></li>
+                            <!-- <li><a href="#about">About</a></li> -->
+                            <li><a href="#contact" @click="menuChecked=false">Contact</a></li>
+                            <li><a href="mailto:bcchan.ent@gmail.com?subject=Book an appointment" @click="menuChecked=false">Book an appointment</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</header>

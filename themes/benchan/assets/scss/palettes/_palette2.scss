@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Inter&family=Literata:opsz,wght@7..72,500&display=swap');
+$font-title: 'Archivo', sans-serif;
+$font-body: 'Inter', sans-serif;
+$font-logo: 'Literata', serif;
+
+$black: #2A2627;
+$white: #FCF7F8;
+
+$grey-1: #f4f4f4;
+$grey-2: #B5B5B5;
+$grey-3: #4E4A5A;
+$grey-4: #343b43;
+$grey-5: #2D3142;
+
+$yellow: #FBB13C;
+$orange: #FFA400;
+$orange-dark: #db8504;
+$red: #EE6055;
+$red-dark: #832232;
+$pink: F4AFB4;
+$purple: #966B9D;
+$blue-darker: #00344E;
+$blue-dark: #2a3b74;
+$blue: #4059AD;
+$aqua: #8CFBDE;
+$mint: #B9FFB7;
+$green: #9BDEAC;
+$green-dark: #218380;
+$beige: #C1B098;
+$brown: #4F270D;
+
+// Link states
+$link: $blue;
+$hover: $blue-dark;
+
+$link-light: $blue;
+$link-light-hover: $blue-dark;
+
+$button-primary: $link;
+$button-primary-hover: $hover;
+
+// header
+$page-header-bg: #fff;
+$page-header-color: $black;
+$page-header-link-color: $blue-dark;
+$page-header-link-hover-color: $blue;
+$page-header-btn-link-color: $yellow;
+$page-header-btn-link-hover-color: $orange;
+
+// page colours
+$body-bg: $white;
+$body-color: $black;
+$bg-page-section: $black;
+$bg-hero: $white;
+
+// blocks
+$block-bg: $white;
+$block-color: $grey-5;
+
+$block-alt-bg: $beige;
+$block-alt-color: $black;
+
+// footer
+$page-footer-bg: $beige;
+$page-footer-color: $black;
+$page-footer-link-color: $blue;
+$page-footer-link-hover-color: $blue-dark;
+
+$page-footer-banner: $black;
+$page-footer-banner-color: white;
