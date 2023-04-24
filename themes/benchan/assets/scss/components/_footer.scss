@@ -41,6 +41,8 @@
             }
             .map_wrapper {
                 position: relative;
+                overflow: hidden;
+                max-width: 100vw;
                 // min-height: 400px;
                 // @include for-tablet-landscape-up {
                 //     position: inherit;

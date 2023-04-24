@@ -1520,9 +1520,6 @@ button, .btn {
   text-align: center;
   cursor: pointer;
   border: 0 none; }
-  @media screen and (max-width: 599px) {
-    button, .btn {
-      display: block; } }
   button.inline, .btn.inline {
     display: inline !important; }
   button:disabled, .btn:disabled {
@@ -1949,7 +1946,9 @@ html body > footer {
     html body > footer > div.container > div .follow a {
       margin-right: 5px; }
   html body > footer .map_wrapper {
-    position: relative; }
+    position: relative;
+    overflow: hidden;
+    max-width: 100vw; }
 
 html .copyright {
   margin-top: -7px;
