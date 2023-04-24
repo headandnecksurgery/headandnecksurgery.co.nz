@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
         }
 
         &-very-slim-left {
-            grid-template-columns: 30px minmax(250px, 1fr);
+            grid-template-columns: 30px minmax(200px, 1fr);
             
             img {
                 max-width: 30px;
