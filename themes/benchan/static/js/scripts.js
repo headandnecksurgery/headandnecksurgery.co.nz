@@ -1,10 +1,9 @@
-// preload hero image
+/* preload hero image */
 const img = new Image();
 img.onload = function() { 
     console.log('loaded loader');
 }
 img.src = "/imgs/logo.png";
-
 
 const imgBg = new Image();
 imgBg.onload = function() { 
@@ -16,6 +15,18 @@ imgBg.onload = function() {
 }
 imgBg.src = "/imgs/hero.jpg";
 
+/* Mobile menu */
+window.addEventListener("load", function () {
+    document.getElementById('menu-trigger').addEventListener('change', function() {
+        const body = document.querySelector('body');
+        if(this.checked) {
+            body.classList.add('overflow-hidden');
+        } else {
+            body.classList.remove('overflow-hidden');
+        }
+    });
+});
+
 /*
  * General helper functions
  */
@@ -25,7 +36,7 @@ function scrollTo(elementId) {
 
 }
 
-// catch top of page
+/* catch top of page */
 let top_of_page = true;
 window.addEventListener("scroll", function(){
     let y = window.scrollY;
