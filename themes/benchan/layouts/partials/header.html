@@ -1,14 +1,15 @@
-<header id="page-header" class="{{ .Site.Params.headerLayout }} animated fadeIn delay-2s page-at-top" :class="menuChecked ? 'menu-checked' : ''"  x-data="{menuChecked: false}">
+<header id="page-header" class="{{ .Site.Params.headerLayout }} animated fadeIn delay-2s page-at-top" :class="$store.menuTrigger.checked ? 'menu-checked' : ''"  x-data="">
    
     <div>
         <!-- Desktop -->
         <div id="logo" class="animated fadeIn delay-1s">
             {{/* <a href="#"><img src="/imgs/logo_navy.svg" alt="{{ .Site.Title }}" /></a> */}}
-            <a href="#" @click="menuChecked=false">
+            <a href="#" @click="$store.menuTrigger.setOff()">
                 {{ .Site.Title }}
                 <div id="logo-tag-line">Head and Neck Surgeon</div>
             </a>
         </div>
+
         <div id="main-menu" class="animated fadeIn delay-1s">
             <nav class="for-tablet-portrait-up">
                 {{/* <ul>
@@ -31,7 +32,7 @@
             <!-- Mobile -->
             <nav role="navigation" class="phone-menu for-phone-only">
                 <div id="menuToggle">
-                    <input type="checkbox" id="menu-trigger" :checked="menuChecked" x-model="menuChecked" />
+                    <input type="checkbox" id="menu-trigger" x-model="$store.menuTrigger.checked"/>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -45,11 +46,10 @@
                         {{ end }}
                         {{ end }} */}}
                         <ul>
-                            <li><a href="#services" @click="menuChecked=false">Services</a></li>
+                            <li><a href="#services" @click="$store.menuTrigger.setOff()">Services</a></li>
                             <!-- <li><a href="#about">About</a></li> -->
-                            <li><a href="#contact" @click="menuChecked=false">Contact</a></li>
-                            <li><a href="mailto:bcchan.ent@gmail.com?subject=Book an appointment" @click="menuChecked=false">Book an appointment</a>
-                            </li>
+                            <li><a href="#contact" @click="$store.menuTrigger.setOff()">Contact</a></li>
+                            <li><a href="mailto:bcchan.ent@gmail.com?subject=Book an appointment" @click="$store.menuTrigger.setOff()">Book an appointment</a></li>
                         </ul>
                     </ul>
                 </div>
