@@ -16,18 +16,6 @@ imgBg.onload = function() {
 imgBg.src = "/imgs/hero.jpg";
 
 /* Mobile menu */
-// window.addEventListener("load", function () {
-//     document.getElementById('menu-trigger').addEventListener('change', function() {
-//         const body = document.querySelector('body');
-//         console.log(this.checked);
-//         if(this.checked) {
-//             body.classList.add('overflow-hidden');
-//         } else {
-//             body.classList.remove('overflow-hidden');
-//         }
-//     });
-// });
-
 document.addEventListener('alpine:init', () => {
     Alpine.store('menuTrigger', {
         checked: true,
@@ -53,7 +41,6 @@ document.addEventListener('alpine:init', () => {
             } else {
                 body.classList.remove('overflow-hidden');
             }
-            console.log('body.classList', body.classList);
         }
     })
 })
