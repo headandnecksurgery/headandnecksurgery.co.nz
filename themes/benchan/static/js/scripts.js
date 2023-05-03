@@ -18,7 +18,7 @@ imgBg.src = "/imgs/hero.jpg";
 /* Mobile menu */
 document.addEventListener('alpine:init', () => {
     Alpine.store('menuTrigger', {
-        checked: true,
+        checked: false,
 
         init() {
             Alpine.effect(() => {
