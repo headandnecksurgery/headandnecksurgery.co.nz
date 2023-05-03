@@ -1284,7 +1284,7 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
         .grid.two-small-left {
           grid-template-columns: 60px minmax(200px, 1fr); } }
     .grid.two-very-slim-left {
-      grid-template-columns: 30px minmax(250px, 1fr); }
+      grid-template-columns: 30px minmax(200px, 1fr); }
       .grid.two-very-slim-left img {
         max-width: 30px; }
       .grid.two-very-slim-left p {
@@ -1350,6 +1350,9 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
 
 .roles > div {
   font-size: small; }
+
+.overflow-hidden {
+  overflow: hidden; }
 
 .font-title {
   font-family: "Archivo", sans-serif; }
@@ -2014,6 +2017,8 @@ html .copyright {
         @media screen and (min-width: 1400px) {
           .hero #hero-bg .hero-content > div h1 {
             font-size: 55px; } }
+      .hero #hero-bg .hero-content > div .tag-line {
+        padding-top: 2px; }
       .hero #hero-bg .hero-content > div .x-large {
         font-size: 22px;
         padding: 0 10px; }
