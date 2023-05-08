@@ -9,8 +9,8 @@ paginate = 20
     legal_title = "Benjamin Chan"
 
     # Meta ------------
-    description = "Benjamin Chan, Head and Neck Surgeon based in Christchurch, New Zealand"
-    keywords = "Benjamin Chan, Head and Neck Surgeon, Head and neck, Head and Neck cancer, Oral cavity, throat, sinonasal, Neck lumps, Skin cancers, Salivary gland disorders, Difficulty swallowing, Altered voice, Thyroid, Nodules, Goitre, Thyroid cancer, Hyperthyroidism, Thyroglossal duct cysts, Hyperparathyroidism, Nose and Sinus, Blocked nose, Bleeding nose, Deviated septum, Nasal polyps, Sinusitis, Rhinitis, Paediatric ENT, Snoring/sleep disordered breathing, Enlarged tonsils, Glue ear, Ear infections, Tonsillitis, Neck lumps"
+    description = "Dr Benjamin Chan, Head and Neck Surgeon based in Christchurch, New Zealand"
+    keywords = "Dr Benjamin Chan, Head and Neck Surgeon, Head and Neck cancer, Oral cavity, throat, sinonasal, Neck lumps, Skin cancers, Salivary gland disorders, Difficulty swallowing, Altered voice, Thyroid, Nodules, Goitre, Thyroid cancer, Hyperthyroidism, Thyroglossal duct cysts, Hyperparathyroidism, Nose and Sinus, Blocked nose, Bleeding nose, Deviated septum, Nasal polyps, Sinusitis, Rhinitis, Paediatric ENT, Snoring/sleep disordered breathing, Enlarged tonsils, Glue ear, Ear infections, Tonsillitis, Neck lumps"
 
     # Global settings ------------
     favicon_32 = "/imgs/favicon-32x32.png"
@@ -24,7 +24,7 @@ paginate = 20
     footerNewsletter = true
 
     # Blog ------------ 
-    author = "Benjamin Chan"
+    author = "Dr Benjamin Chan"
     info = "Head and Neck Surgeon"
 
     # analytics
