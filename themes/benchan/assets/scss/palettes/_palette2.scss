@@ -5,6 +5,7 @@ $font-logo: 'Literata', serif;
 
 $black: #2A2627;
 $white: #FCF7F8;
+$white-off: $white;
 
 $grey-1: #f4f4f4;
 $grey-2: #B5B5B5;
@@ -59,6 +60,10 @@ $block-color: $grey-5;
 
 $block-alt-bg: $beige;
 $block-alt-color: $black;
+
+// blockquote
+$blockquote-bg: $black;
+$blockquote-color: $white;
 
 // footer
 $page-footer-bg: $beige;

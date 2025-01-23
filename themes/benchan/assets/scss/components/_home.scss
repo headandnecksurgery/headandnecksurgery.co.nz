@@ -213,7 +213,88 @@
     }
 }
 
+.quote {
+    margin: 0;
+    padding: 0 !important;
+    // padding: 200px var(--spacing-2) 200px var(--spacing-2);
+    display: grid;
+    grid-template-columns: 1fr;
+    color: $blockquote-color;
+
+    @include for-tablet-portrait-up {
+        grid-template-columns: 1fr 50%;
+    }
+
+    @include for-tablet-landscape-up {
+        grid-template-columns: 40% 1fr;
+    }
+
+    >div:first-child {
+        background-color: $blockquote-bg;
+        padding: 100px 20px;
+
+        @include for-phone-only {
+            order: 2
+        }
+
+        blockquote {
+            margin: 0 20px auto 40px;
+
+            @include for-tablet-portrait-up {
+                margin: 220px auto;
+                // width: 60%;
+            }
+
+            @include for-tablet-landscape-up {
+                margin: 220px 80px;
+                // width: 35%;
+            }
+        }
+    }
+
+    >div:last-child {
+        background: $white-off url('/imgs/pexels-kelvin809-810775.jpg') no-repeat center top;
+        // background: $white-off url('/imgs/pexels-kindelmedia-7938556.jpg') no-repeat center top;
+        background: $white-off url('/imgs/pexels-meruyert-gonullu-6589021.jpg') no-repeat center top;
+        background: $white-off url('/imgs/pexels-olly-3760526.jpg') no-repeat center top;
+        
+        
+        background-size: cover;
+        min-height: 300px;
+    }
+}
+
 .service-grid {
+    .img-head-and-neck {
+        background: $white-off url('/imgs/service-head-and-neck.jpg') no-repeat center top;
+        background-size: cover;
+        min-height: 300px;
+        margin-bottom: 20px;
+        border-radius: $border-radius;
+    }
+    .img-thyroid {
+        background: $white-off url('/imgs/service-thyroid.jpg') no-repeat center top;
+        background-size: cover;
+        min-height: 300px;
+        margin-bottom: 20px;
+        border-radius: $border-radius;
+    }
+    .img-nose-and-sinus{
+        background: $white-off url('/imgs/service-nose-and-sinus.jpg') no-repeat center top;
+        background-size: cover;
+        min-height: 300px;
+        margin-bottom: 20px;
+        border-radius: $border-radius;
+    }
+
+    .img-paediatric-ent {
+        background: $white-off url('/imgs/service-paediatric.jpg') no-repeat center top;
+        background-size: cover;
+        min-height: 300px;
+        margin-bottom: 20px;
+        border-radius: $border-radius;
+    }
+
     img {
         max-width: 80px;
         margin: 0 auto 0 0;
@@ -221,13 +302,24 @@
     h4 {
         margin-bottom: 10px;
         padding-top: 5px;
+
+        &.with-icon {
+            span {
+                float: right;
+
+                img {
+                    max-width: 35px;
+                    display: none;
+                }
+            }
+        }
     }
     ul {
         list-style: none;
     }
       
     li::before {
-        content: "•"; 
+        content: "-"; 
         color: $blue;
         display: inline-block; width: 1em;
         margin-left: -1em

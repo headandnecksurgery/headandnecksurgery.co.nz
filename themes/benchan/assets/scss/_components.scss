@@ -223,3 +223,10 @@ button {
     background: $block-alt-bg;
     color: $block-alt-color;
 }
+
+.pill {
+    padding: 3px 10px 3px 7px;
+    background: $black;
+    color: $white;
+    border-radius: $border-radius;
+}

@@ -10,7 +10,7 @@
             <h1 class="mb-0">{{ .Title }}</h1>
             <div class="blog-profile">
               <!-- - <a href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author }}</a> -->
-              <div><a href="/#team"><img src="/imgs/team/{{ lower (replace .Params.Author " " "-") }}.png" alt="profile pic" /></a></div>
+              <div><a href="/#team"><img src="/imgs/team/{{ lower (replace .Params.Author " " "-") }}.png" alt="Profile pic" /></a></div>
               <div>
                 <a href="/#team">{{ .Params.Author }}</a><br/>
                 <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
