@@ -28,7 +28,7 @@ pagination.pagerSize = 20
     info = "Head and Neck Surgeon"
 
     # analytics
-    google_analitycs_id = 'G-8YJYB8KB5W'
+    google_analitycs_id = 'G-8QHDY3JWQT'
     
 [taxonomies]
     category = "categories"
