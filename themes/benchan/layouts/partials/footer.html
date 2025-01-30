@@ -37,10 +37,25 @@
                     </div>
                 
                     <label for="message">Message <span class="red">*</span></label>
-                    <textarea name="message" class="mb-2" rows="8" required></textarea>
-                
-                    <button type="submit" class="btn">Submit <i class="lni lni-arrow-right"></i></button>
-                    <script src="https://staticcontact.com/js/static_contact_botbuster.js"></script>
+                    <textarea name="message" rows="8" required></textarea>
+                    <p class="mb-2"><small>This site is protected by reCAPTCHA and the Google
+                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                        <a href="https://policies.google.com/terms">Terms of Service</a> apply.</small></p>
+                    
+                    <button class="g-recaptcha btn" data-sitekey="6LcaRscqAAAAAMxWlUTqL_Q00g2qUKSOVNN0gyHm" data-callback='onSubmit'
+                        data-action='submit'>Submit <i class="lni lni-arrow-right"></i></button>
+                    <script src="https://www.google.com/recaptcha/api.js"></script>
+                    <script>
+                        function onSubmit(token) {
+                            var form = document.getElementById("contactform");
+                            if (form.checkValidity()) {
+                                form.submit();
+                            } else {
+                                grecaptcha.reset();
+                                form.reportValidity();
+                            }
+                        }
+                    </script>
                 </form>
                 {{/* <div class="mb-1"><a href="mailto:admin@headandnecksurgery.co.nz?subject=Dr Benjamin Chan Website Enquiry"
                         class="btn">Email us</a></div> */}}
@@ -56,7 +71,7 @@
 
         <div class="map_wrapper">
             <div class="map">
-                <iframe width="100%" height="780" style="border:0" loading="lazy" allowfullscreen
+                <iframe width="100%" height="795" style="border:0" loading="lazy" allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkfWWJRx_OrE5FbK-kcK6sTwHLD93LKfs&zoom=16
                 &q=Suite+10+Mauranui+Clinic+86+Great+South+Rd+Epsom+Auckland+1051">
                 </iframe>
